@@ -1,0 +1,713 @@
+keys:
+- key: A
+  seq:
+  - 3
+  - 5
+  - 4
+  - 2
+- key: B
+  seq:
+  - 5
+  - 4
+  - 2
+  - 3
+  - 0
+  - 1
+  ignore:
+  - render
+- key: B
+  seq:
+  - 5
+  - 4
+  - 3
+  - 0
+  - 1
+- key: C
+  seq:
+  - 4
+  - 5
+  - 3
+  - 1
+  - 0
+- key: C
+  seq:
+  - 4
+  - 3
+  - 5
+  - 1
+  - 0
+  ignore:
+  - render
+- key: C
+  seq:
+  - 4
+  - 5
+  - 3
+  - 0
+  - 1
+  ignore:
+  - render
+- key: D
+  seq:
+  - 5
+  - 2
+  - 1
+- key: D
+  seq:
+  - 5
+  - 4
+  - 2
+  - 1
+  - 0
+  ignore:
+  - render
+- key: D
+  seq:
+  - 5
+  - 4
+  - 2
+  - 0
+  - 1
+  ignore:
+  - render
+- key: D
+  seq:
+  - 5
+  - 4
+  - 0
+  - 2
+  - 1
+  ignore:
+  - render
+- key: E
+  seq:
+  - 3
+  - 2
+  - 4
+  - 5
+  - 1
+  - 0
+- key: E
+  seq:
+  - 3
+  - 2
+  - 4
+  - 5
+  - 0
+  - 1
+  ignore:
+  - render
+- key: E
+  seq:
+  - 2
+  - 4
+  - 3
+  - 5
+  - 1
+  - 0
+  ignore:
+  - render
+- key: E
+  seq:
+  - 2
+  - 4
+  - 5
+  - 3
+  - 1
+  - 0
+  ignore:
+  - render
+- key: E
+  seq:
+  - 2
+  - 3
+  - 4
+  - 5
+  - 1
+  - 0
+  ignore:
+  - render
+- key: E
+  seq:
+  - 0
+  - 2
+  - 4
+  - 3
+  - 5
+  - 1
+  ignore:
+  - render
+- key: E
+  seq:
+  - 2
+  - 4
+  - 5
+  - 1
+  - 0
+  ignore:
+  - render
+- key: E
+  seq:
+  - 3
+  - 2
+  - 4
+  - 5
+  - 1
+  ignore:
+  - render
+- key: E
+  seq:
+  - 2
+  - 4
+  - 5
+  - 3
+  - 1
+  ignore:
+  - render
+- key: F
+  seq:
+  - 4
+  - 5
+  - 3
+  - 1
+  svg: M10 20 l10 0
+- key: F
+  seq:
+  - 4
+  - 5
+  - 1
+  - 3
+  ignore:
+  - render
+- key: G
+  seq:
+  - 4
+  - 5
+  - 3
+  - 1
+  - 0
+  - 2
+- key: H
+  seq:
+  - 5
+  - 3
+  - 2
+  - 0
+  svg: M10 20 l0 10
+- key: H
+  seq:
+  - 3
+  - 5
+  - 2
+  - 0
+  ignore:
+  - render
+- key: H
+  seq:
+  - 5
+  - 3
+  - 2
+  ignore:
+  - render
+- key: H
+  seq:
+  - 5
+  - 3
+  - 1
+  - 2
+  - 0
+  ignore:
+  - render
+- key: I
+  seq:
+  - 3
+  - 1
+- key: I
+  seq:
+  - 1
+  - 3
+  ignore:
+  - render
+- key: J
+  seq:
+  - 4
+  - 2
+  - 0
+  - 1
+- key: J
+  seq:
+  - 4
+  - 0
+  - 2
+  - 1
+  ignore:
+  - render
+- key: K
+  seq:
+  - 4
+  - 3
+  - 0
+  svg: M10 10 l0 20
+- key: L
+  seq:
+  - 5
+  - 3
+  - 1
+  - 0
+- key: L
+  seq:
+  - 5
+  - 1
+  - 3
+  - 0
+  ignore:
+  - render
+- key: L
+  seq:
+  - 3
+  - 5
+  - 1
+  - 0
+  ignore:
+  - render
+- key: L
+  seq:
+  - 5
+  - 3
+  - 1
+  ignore:
+  - render
+- key: L
+  seq:
+  - 3
+  - 5
+  ignore:
+  - render
+- key: L
+  seq:
+  - 3
+  - 1
+  - 0
+  ignore:
+  - render
+- key: M
+  seq:
+  - 1
+  - 3
+  - 2
+  - 0
+  svg: M10 30 l0 -10 l10 0 l0 10 l0 -10 l10 0 l0 10
+- key: M
+  seq:
+  - 1
+  - 2
+  - 3
+  - 0
+  ignore:
+  - render
+- key: M
+  seq:
+  - 1
+  - 3
+  - 0
+  - 2
+  ignore:
+  - render
+- key: N
+  seq:
+  - 1
+  - 3
+  - 5
+  - 0
+  - 2
+  - 4
+- key: N
+  seq:
+  - 1
+  - 3
+  - 5
+  - 2
+  - 0
+  - 4
+  ignore:
+  - render
+- key: N
+  seq:
+  - 1
+  - 3
+  - 5
+  - 0
+  - 4
+  ignore:
+  - render
+- key: N
+  seq:
+  - 1
+  - 5
+  - 0
+  - 2
+  - 4
+  ignore:
+  - render
+- key: O
+  seq:
+  - 1
+  - 3
+  - 5
+  - 4
+  - 2
+  - 0
+  - 1
+- key: O
+  seq:
+  - 1
+  - 3
+  - 5
+  - 4
+  - 0
+  - 2
+  ignore:
+  - render
+- key: O
+  seq:
+  - 1
+  - 3
+  - 4
+  - 5
+  - 2
+  - 0
+  ignore:
+  - render
+- key: O
+  seq:
+  - 1
+  - 3
+  - 5
+  - 2
+  - 4
+  - 0
+  ignore:
+  - render
+- key: O
+  seq:
+  - 1
+  - 3
+  - 4
+  - 5
+  - 0
+  - 2
+  ignore:
+  - render
+- key: P
+  seq:
+  - 1
+  - 3
+  - 5
+  - 4
+  - 2
+  - 3
+- key: P
+  seq:
+  - 1
+  - 3
+  - 4
+  - 5
+  - 2
+  ignore:
+  - render
+- key: Q
+  seq:
+  - 5
+  - 0
+- key: Q
+  seq:
+  - 5
+  - 2
+  - 0
+  ignore:
+  - render
+- key: Q
+  seq:
+  - 5
+  - 3
+  - 0
+  ignore:
+  - render
+- key: R
+  seq:
+  - 3
+  - 5
+  - 4
+- key: R
+  seq:
+  - 1
+  - 3
+  - 5
+  - 4
+  ignore:
+  - render
+- key: S
+  seq:
+  - 4
+  - 5
+  - 3
+  - 2
+  - 0
+  - 1
+- key: S
+  seq:
+  - 4
+  - 3
+  - 5
+  - 2
+  - 0
+  - 1
+  ignore:
+  - render
+- key: S
+  seq:
+  - 4
+  - 3
+  - 0
+  - 2
+  - 1
+  ignore:
+  - render
+- key: S
+  seq:
+  - 4
+  - 3
+  - 2
+  - 0
+  - 1
+  ignore:
+  - render
+- key: T
+  seq:
+  - 5
+  - 4
+  - 2
+  - 0
+  svg: M20 10 l10 0
+- key: U
+  seq:
+  - 5
+  - 3
+  - 1
+  - 0
+  - 2
+  - 4
+- key: U
+  seq:
+  - 5
+  - 1
+  - 0
+  - 2
+  - 4
+  ignore:
+  - render
+- key: U
+  seq:
+  - 5
+  - 1
+  - 3
+  - 0
+  - 2
+  - 4
+  ignore:
+  - render
+- key: U
+  seq:
+  - 5
+  - 3
+  - 0
+  - 2
+  - 4
+  ignore:
+  - render
+- key: V
+  seq:
+  - 5
+  - 3
+  - 1
+  - 4
+- key: V
+  seq:
+  - 5
+  - 3
+  - 1
+  - 2
+  - 4
+  ignore:
+  - render
+- key: V
+  seq:
+  - 5
+  - 1
+  - 3
+  - 2
+  - 4
+  ignore:
+  - render
+- key: W
+  seq:
+  - 3
+  - 1
+  - 0
+  - 2
+  svg: M10 20 l0 10 l10 0 l0 -10 l0 10 l10 0 l0 -10
+- key: W
+  seq:
+  - 3
+  - 0
+  - 1
+  - 2
+  ignore:
+  - render
+- key: W
+  seq:
+  - 3
+  - 0
+  - 2
+  ignore:
+  - render
+- key: X
+  seq:
+  - 5
+  - 0
+  - 2
+  - 4
+  - 1
+- key: X
+  seq:
+  - 5
+  - 2
+  - 0
+  - 4
+  - 1
+  ignore:
+  - render
+- key: X
+  seq:
+  - 5
+  - 3
+  - 0
+  - 2
+  - 4
+  - 1
+  ignore:
+  - render
+- key: X
+  seq:
+  - 5
+  - 2
+  - 3
+  - 0
+  - 4
+  - 1
+  ignore:
+  - render
+- key: X
+  seq:
+  - 5
+  - 3
+  - 2
+  - 0
+  - 4
+  - 1
+  ignore:
+  - render
+- key: Y
+  seq:
+  - 5
+  - 2
+  - 4
+  - 0
+- key: Y
+  seq:
+  - 5
+  - 2
+  - 0
+  - 4
+  ignore:
+  - render
+- key: Y
+  seq:
+  - 5
+  - 2
+  - 4
+  ignore:
+  - render
+- key: Z
+  seq:
+  - 5
+  - 4
+  - 1
+  - 0
+- key: Z
+  seq:
+  - 4
+  - 2
+  - 1
+  - 0
+  ignore:
+  - render
+- key: Z
+  seq:
+  - 5
+  - 4
+  - 2
+  - 1
+  ignore:
+  - render
+- key: Z
+  seq:
+  - 5
+  - 4
+  - 2
+  - 1
+  - 0
+  ignore:
+  - render
+- key: SPACE
+  seq:
+  - 3
+  - 2
+- key: SPACE
+  seq:
+  - 2
+  - 3
+  ignore:
+  - render
+- key: ENTER
+  seq:
+  - 4
+  - 2
+  - 0
+- key: ENTER
+  seq:
+  - 2
+  - 4
+  - 0
+  ignore:
+  - render
+- key: ENTER
+  seq:
+  - 2
+  - 0
+  ignore:
+  - render
+- key: ENTER
+  seq:
+  - 0
+  - 2
+  ignore:
+  - render
+- key: BACKSPACE
+  seq:
+  - 4
+  - 5
+- key: PERIOD
+  seq:
+  - 5
+
