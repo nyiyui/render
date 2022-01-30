@@ -1,4 +1,4 @@
-# generated on 2022-01-30T22:25:08.950199
+# generated on 2022-01-30T22:31:43.867601
 from adafruit_hid.keycode import Keycode
 
 
@@ -93,6 +93,6 @@ keys = {
     (2, 0): [Keycode.ENTER],
     (0, 2): [Keycode.ENTER],
     (4, 5): [Keycode.BACKSPACE],
-    (5): [Keycode.PERIOD],
+    (5,): [Keycode.PERIOD],
 }
 
