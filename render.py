@@ -113,7 +113,7 @@ def data(inf):
         if schema.Format.DATA in key.get("ignore", []):
             continue
         out.write("    ")
-        out.write(f"({', '.join(map(str, key['seq']))}): [Keycode.{key['key']}],\n")
+        out.write(f"({', '.join(map(str, key['seq']))}{',' if len(key['seq']) == 1 else ''}): [Keycode.{key['key']}],\n")
     out.write("}\n")
     print(out.getvalue())
 
