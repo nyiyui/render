@@ -1,5 +1,10 @@
 all: index.html data.py;
 
+deploy: all
+	mkdir public
+	cp index.html public/
+	cp data.py public/
+
 data.yaml:
 	./yeet.py < input.txt > data.yaml
 
