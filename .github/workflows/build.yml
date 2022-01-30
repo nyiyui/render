@@ -16,6 +16,8 @@ jobs:
     - uses: actions/setup-python@v2
       with:
         python-version: '3.x'
+    - name: Deps
+      run: pip install -r requirements.txt
     - name: Build
       run: make
     - name: Deploy
