@@ -72,7 +72,7 @@ def render(path: str=""):
     </head>
     <body>
         <p>Generated on """+datetime.utcnow().isoformat()+"""</p>
-        <table class="w3-table w3-striped">
+        <table class="w3-table w3-striped w3-mobile">
             <tr>
                 <th>Key</th>
                 <th>Diagram</th>
