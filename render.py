@@ -68,10 +68,34 @@ def render(path: str=""):
             .diagram {
                 height: 7rem;
             }
+.div-col {
+	margin-top: 0.3em;
+	column-width: 30em;
+}
+
+.div-col-rules {
+	column-rule: 1px solid #aaa;
+}
+
+/* Reset top margin for lists in div col */
+.div-col dl,
+.div-col ol,
+.div-col ul {
+	margin-top: 0;
+}
+
+/* Avoid elements breaking between columns
+   See also Template:No col break */
+.div-col li,
+.div-col dd {
+	break-inside: avoid-column;
+}
+
         </style>
     </head>
     <body>
         <p>Generated on """+datetime.utcnow().isoformat()+"""</p>
+        <div class="div-col">
         <table class="w3-table w3-striped w3-mobile">
             <tr>
                 <th>Key</th>
@@ -92,6 +116,7 @@ def render(path: str=""):
 
     res += """
         </table>
+        </div>
     </body>
 </html>
     """
