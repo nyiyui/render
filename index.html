@@ -8,10 +8,34 @@
             .diagram {
                 height: 7rem;
             }
+.div-col {
+	margin-top: 0.3em;
+	column-width: 30em;
+}
+
+.div-col-rules {
+	column-rule: 1px solid #aaa;
+}
+
+/* Reset top margin for lists in div col */
+.div-col dl,
+.div-col ol,
+.div-col ul {
+	margin-top: 0;
+}
+
+/* Avoid elements breaking between columns
+   See also Template:No col break */
+.div-col li,
+.div-col dd {
+	break-inside: avoid-column;
+}
+
         </style>
     </head>
     <body>
-        <p>Generated on 2022-03-14T21:49:05.560445</p>
+        <p>Generated on 2022-03-14T22:05:58.393871</p>
+        <div class="div-col">
         <table class="w3-table w3-striped w3-mobile">
             <tr>
                 <th>Key</th>
@@ -174,6 +198,7 @@
 </defs><path d="M10 20 L20 20 L20 30 L10 30" stroke="#000" fill="none" marker-start="url(#arrowhead)" marker-end="url(#arrowhead)" /><circle cx="10" cy="10" r="1" stroke="#000" fill="#fff" /><circle cx="20" cy="10" r="1" stroke="#000" fill="#fff" /><circle cx="10" cy="20" r="1" stroke="#000" fill="#fff" /><circle cx="20" cy="20" r="1" stroke="#000" fill="#fff" /><circle cx="10" cy="30" r="1" stroke="#000" fill="#fff" /><circle cx="20" cy="30" r="1" stroke="#000" fill="#fff" /></svg></td></tr>
 
         </table>
+        </div>
     </body>
 </html>
     
