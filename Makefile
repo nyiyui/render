@@ -14,4 +14,10 @@ data.py: data.yaml
 index.html: input.txt
 	./render.py render < input.txt > index.html
 
-.PHONY: all
+clean:
+	rm -rf public
+	rm -rf data.yaml
+	rm -rf data.py
+	rm -rf index.html
+
+.PHONY: all clean

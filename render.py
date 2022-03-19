@@ -58,6 +58,15 @@ def cli():
 
 @cli.command()
 def render(path: str=""):
+    TABLE_HEADER = """
+        <table class="w3-table w3-striped">
+            <tr>
+                <th>Key</th>
+                <th>Diagram</th>
+"""
+    TABLE_FOOTER = """
+        </table>
+"""
     res = """<!DOCTYPE html>
 <html>
     <head>
@@ -72,12 +81,10 @@ def render(path: str=""):
     </head>
     <body>
         <p>Generated on """+datetime.utcnow().isoformat()+"""</p>
-        <table class="w3-table w3-striped">
-            <tr>
-                <th>Key</th>
-                <th>Diagram</th>
     """
+    res += TABLE_HEADER
 
+    i = 0
     for line in sys.stdin:
         if line.startswith("#"):
             continue
@@ -90,8 +97,8 @@ def render(path: str=""):
         res += f"<td>{diagram(inp, path)}</td>"
         res += "</tr>\n"
 
+    res += TABLE_FOOTER
     res += """
-        </table>
     </body>
 </html>
     """
