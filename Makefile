@@ -3,6 +3,7 @@ all: index.html index2.html data.py;
 deploy: all
 	mkdir public
 	cp index.html public/
+	cp index2.html public/
 	cp data.py public/
 
 data.yaml:
