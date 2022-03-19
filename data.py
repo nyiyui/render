@@ -1,4 +1,4 @@
-# generated on 2022-03-19T01:56:25.689385
+# generated on 2022-03-19T02:32:19.202525
 from adafruit_hid.keycode import Keycode
 
 
