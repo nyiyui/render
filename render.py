@@ -57,16 +57,8 @@ def cli():
     pass
 
 @cli.command()
-def render(path: str=""):
-    TABLE_HEADER = """
-        <table class="w3-table w3-striped">
-            <tr>
-                <th>Key</th>
-                <th>Diagram</th>
-"""
-    TABLE_FOOTER = """
-        </table>
-"""
+@click.argument("typ", default=0)
+def render(typ=0):
     res = """<!DOCTYPE html>
 <html>
     <head>
@@ -77,45 +69,17 @@ def render(path: str=""):
             .diagram {
                 height: 7rem;
             }
-
-td {
-margin: 0 !important;
-padding: 0 !important;
-}
-
-.div-col {
-	margin-top: 0.3em;
-	column-width: 30em;
-}
-
-.div-col-rules {
-	column-rule: 1px solid #aaa;
-}
-
-/* Reset top margin for lists in div col */
-.div-col dl,
-.div-col ol,
-.div-col ul {
-	margin-top: 0;
-}
-
-/* Avoid elements breaking between columns
-   See also Template:No col break */
-.div-col li,
-.div-col dd {
-	break-inside: avoid-column;
-}
-
+            .label {
+                font-size: 1rem;
+            }
+            .letters :nth-child(odd) {
+                background-color: #eee;
+            }
         </style>
     </head>
     <body>
-        <div class="div-col">
-        <table class="w3-table w3-striped w3-mobile">
-            <tr>
-                <th>Key</th>
-                <th>Diagram</th>
-    """
-    res += TABLE_HEADER
+        <div id="letters" class="w3-container">
+"""
 
     i = 0
     for line in sys.stdin:
@@ -125,16 +89,23 @@ padding: 0 !important;
         name = raw[0]
         inp = raw[1]
         path = raw[2] if len(raw) > 2 else ""
-        res += f'<tr id="key-{name}">'
-        res += f'<td><a href="#key-{name}">{name}</a></td>'
-        res += f"<td>{diagram(inp, path)}</td>"
-        res += "</tr>\n"
+        res += f'''
+<div id="key-{name}" class="{'w3-quarter' if typ == 1 else 'w3-rest'}">
+    <div class="w3-container">
+        <a class="label w3-quarter" href="#key-{name}">{name}</a>
+        <div class="w3-rest">{diagram(inp, path)}</div>
+    </div>
+</div>
+'''
+        #res += f'<tr id="key-{name}">'
+        #res += f'<td><a href="#key-{name}">{name}</a></td>'
+        #res += f"<td>{diagram(inp, path)}</td>"
+        #res += "</tr>\n"
 
-    res += TABLE_FOOTER
     res += """
-        </table>
         </div>
-        <p>Generated on """+datetime.utcnow().isoformat()+"""</p>
+        <p>Generated on """+datetime.utcnow().isoformat()+""".</p>
+        <a href="https://github.com/nyiyui/render">Source</a>
     </body>
 </html>
     """

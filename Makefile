@@ -1,4 +1,4 @@
-all: index.html data.py;
+all: index.html index2.html data.py;
 
 deploy: all
 	mkdir public
@@ -14,10 +14,14 @@ data.py: data.yaml
 index.html: input.txt
 	./render.py render < input.txt > index.html
 
+index2.html: input.txt
+	./render.py render 1 < input.txt > index2.html
+
 clean:
 	rm -rf public
 	rm -rf data.yaml
 	rm -rf data.py
 	rm -rf index.html
+	rm -rf index2.html
 
 .PHONY: all clean

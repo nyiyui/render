@@ -724,5 +724,8 @@ keys:
   - render
 - key: PERIOD
   seq:
-  - 5
+  - 3
+  - 2
+  - 0
+  - 1
 
