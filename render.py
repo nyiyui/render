@@ -68,6 +68,12 @@ def render(path: str=""):
             .diagram {
                 height: 7rem;
             }
+
+td {
+margin: 0 !important;
+padding: 0 !important;
+}
+
 .div-col {
 	margin-top: 0.3em;
 	column-width: 30em;
