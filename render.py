@@ -94,7 +94,6 @@ def render(path: str=""):
         </style>
     </head>
     <body>
-        <p>Generated on """+datetime.utcnow().isoformat()+"""</p>
         <div class="div-col">
         <table class="w3-table w3-striped w3-mobile">
             <tr>
@@ -117,6 +116,7 @@ def render(path: str=""):
     res += """
         </table>
         </div>
+        <p>Generated on """+datetime.utcnow().isoformat()+"""</p>
     </body>
 </html>
     """
