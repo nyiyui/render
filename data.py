@@ -1,4 +1,4 @@
-# generated on 2022-04-24T19:26:26.810764
+# generated on 2022-04-24T19:39:15.699781
 from adafruit_hid.keycode import Keycode
 
 
@@ -75,6 +75,7 @@ keys = {
     (3, 1, 0, 2): [Keycode.W],
     (3, 0, 1, 2): [Keycode.W],
     (3, 0, 2): [Keycode.W],
+    (5, 0, 4, 1): [Keycode.X],
     (5, 0, 2, 4, 1): [Keycode.X],
     (5, 2, 0, 4, 1): [Keycode.X],
     (5, 3, 0, 2, 4, 1): [Keycode.X],
