@@ -1,6 +1,6 @@
 all: index.html index2.html data.py;
 
-deploy: all
+deploy: clean all
 	mkdir public
 	cp index.html public/
 	cp index2.html public/
